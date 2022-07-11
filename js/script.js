@@ -5,10 +5,10 @@ let imagem = document.getElementById("gif-js")
 imagem.addEventListener("mouseover",function(){
     let srcimage = imagem.src
     if(!imagem.src.includes("gif2")){
-        imagem.src = "../portifolio-/img/gif2.png"
+        imagem.src = "./img/gif2.png"
         imagem.style.padding
     }else{
-        imagem.src = "../portifolio-/img/gif.png"
+        imagem.src = "./img/gif.png"
 
     }
 })
