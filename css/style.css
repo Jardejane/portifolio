@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(68, 41, 72);
+  background: linear-gradient(
+    90deg,
+    rgba(68, 41, 72, 1) 0%,
+    rgba(207, 48, 100, 1) 89%
+  );
+}
+header {
+  width: 100%;
+  height: 4rem;
+  padding: 0.7rem;
+}
+nav ul {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  gap: 4rem;
+}
+header nav ul li {
+  font-size: 1.9rem;
+  list-style-type: none;
+  color: black;
+
+  /* essa linha de baixo mostrar pra professora */
+}
+a:hover {
+  color: rgb(0, 255, 179);
+  background-color: black;
+}
+
+#gif img {
+  position: relative;
+  float: right; /*serve pra colocar a imagem pra um lado */
+  width: 47rem;
+  height: 53rem;
+  object-fit: cover;
+  /* border: 5px solid black; */
+  object-position: 20px 10px;
+  margin: 0px 0px 0px 0px;
+}
+h1 {
+  justify-content: center;
+  display: flex;
+  font-size: 2.7rem;
+  color: #d16010;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.9rem;
+}
+section h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: rgb(149, 142, 222);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.9rem;
+  margin: 0.5rem;
+}
+section h3 {
+  display: flex;
+  justify-content: center;
+  color: aquamarine;
+  padding: 0.9rem;
+}
+
+section p {
+  display: flex;
+  align-items: center;
+  color: rgb(238, 227, 242);
+  padding: 0.9rem;
+  font-size: 1.1rem;
+}
+section .imagens {
+  width: 8rem;
+  height: 10%;
+  padding: 0.9rem;
+}
+/* o sinal de maio seleciona todas as tags que tem esse nome e a div mostra qual é o elemento */
+#linguagens > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.projeto {
+  width: 15rem;
+  min-height: 3vh;
+  padding: 0.3rem;
+  /* background-color: aqua; */
+}
+.imagem-projeto {
+  width: 10rem;
+  height: 10rem;
+}
+h4 {
+  color: aqua;
+  font-size: 2.3rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#contato-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  justify-content: center;
+}
+.contato-div {
+  min-height: 3vh;
+  padding: 0.9rem;
+}
+.imagem-contato1 {
+  width: 7.3rem;
+}
+.imagem-contato2 {
+  width: 8.3rem;
+}
+
+h5 {
+  color: aqua;
+  font-size: 2.3rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+#imagens-redes-sociais {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  justify-content: center;
+}
+.img-sociais {
+  min-height: 3vh;
+  padding: 0.1rem;
+}
+footer {
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1290px) and (max-width: 1456px) {
+  #gif {
+    position: relative;
+    float: right; /*serve pra colocar a imagem pra um lado */
+    width: 57rem;
+    height: 53rem;
+    object-fit: cover;
+    /* border: 5px solid black; */
+    object-position: 20px 10px;
+    margin: -85px 0px 0px -10px;
+  }
+}
+
+@media (max-width: 1123px) {
+  #gif {
+    display: none;
+  }
+}
+
+@media (min-width: 1191px) and (max-width: 1300px) {
+  #linguagens {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2.3%;
+  }
+}
+
+@media (min-width: 604px) and (max-width: 1124px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 1.4rem;
+  }
+  h1 {
+    justify-content: center;
+    display: flex;
+    font-size: 2.6rem;
+    padding: 5% 9%;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  section p {
+    font-size: 1.5rem;
+    align-items: center;
+    padding: 5% 10%;
+  }
+  footer {
+    padding: 5% 10%;
+  }
+}
+@media (min-width: 239px) and (max-width: 603px) {
+  header {
+    width: 100%;
+    height: 3rem;
+    padding: 0.2rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 2rem;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 31px;
+    align-items: center;
+  }
+
+  section .imagens {
+    width: 4rem;
+    height: 10%;
+    padding: 0.9rem;
+  }
+  section h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding: 0.6rem;
+  }
+  h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+}
